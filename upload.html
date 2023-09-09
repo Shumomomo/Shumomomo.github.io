@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>上传</title>
+</head>
+<body><div class="upload"><img src="" alt="" style="width: 200px;height:200px;background:red;"><button>点击上传</button><input type="file" style="display:none" class="fileDoms" onchange="changeFile()"/></div>
+</body>
+<script>let btn  = document.querySelector(".upload button")let img = document.querySelector(".upload img")const fileInputs = document.querySelector('.fileDoms')btn.onclick = btnclickfunction btnclick(){fileInputs.click()}function changeFile(){console.log("上传")let reader = new FileReader();reader.readAsDataURL(fileInputs.files[0]);reader.onload = function(a){img.src = a.target.result; //等同于reader.resultconsole.log(a,reader,reader.result);  }}</script>
+</html>
