@@ -1,8 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-int xxxx,n,m,p,o,cnt,num[59],a[1009][1009],in[1009][1009],d[59],b[45][1009][1009],f[45][1009][1009],xx,yy,q,x1,yy1,x2,yy2,ans,aans,res;
+int xxxx,n,m,p,o,cnt,num[59],a[1009][1009],in[1009][1009],d[59],b[45][1009][1009],f[45][1009][1009],xx,yy,q,x1,yy1,x2,yy2,ans,aans;
+long long res;
 int main(){
-//	freopen("tsuki.in","r",stdin);
+//	freopen("ex_tsuki3.in","r",stdin);
 //	freopen("tsuki.out","w",stdout);
 	scanf("%d%d%d",&n,&m,&p);
 	o=p;
@@ -64,12 +65,12 @@ int main(){
 		ans=1ll*f[0][x2][yy2]*f[0][x1-1][yy1-1]%p*in[x2][yy1-1]%p*in[x1-1][yy2]%p;
 		for(int i=1;i<=cnt;i++){
 			aans=f[i][x2][yy2]+f[i][x1-1][yy1-1]-f[i][x2][yy1-1]-f[i][x1-1][yy2];
-			for(int j=min(aans,num[i]);j;j--){
+			for(int j=1;j<=aans;j++){
 				ans=1ll*ans*d[i]%p;
 			}
 		}
 		res=(res+(ans^i))%147744151;
 	}
-	printf("%d\n",res);
+	printf("%lld\n",res);
 	return 0;
 }
