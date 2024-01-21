@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\blog"
+    "\\blog",
+    "\\blog\\_includes",
+    "\\blog\\_site"
   ],
-  "SelectedNode": "\\blog",
+  "SelectedNode": "\\upload.html",
   "PreviewInSolutionExplorer": false
 }
