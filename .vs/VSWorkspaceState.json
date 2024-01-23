@@ -3,8 +3,11 @@
     "",
     "\\blog",
     "\\blog\\_includes",
-    "\\blog\\_site"
+    "\\blog\\_layouts",
+    "\\blog\\_posts",
+    "\\blog\\_site",
+    "\\blog\\_site\\assets"
   ],
-  "SelectedNode": "\\upload.html",
+  "SelectedNode": "\\blog\\_posts\\2024-01-22-CEE-phrases.md",
   "PreviewInSolutionExplorer": false
 }
