@@ -29,6 +29,7 @@ github_username:  shumomomo
 
 # Build settings
 theme: minima
+markdown: CommonMark
 plugins:
   - jekyll-feed
 
